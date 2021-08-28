@@ -34,7 +34,12 @@ const Home = (): JSX.Element => {
        const response =  await api.get('products');
        const data = response.data;
 
+       const response2 = await api.get('stock');
+       const data2 = response2.data;
+
+       
        setProducts(data);
+
     }
 
     loadProducts();
